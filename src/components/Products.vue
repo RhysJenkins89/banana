@@ -48,6 +48,14 @@ section {
   grid-template-columns: 1fr 1fr 1fr;
   justify-items: center;
   grid-column-gap: 2.5rem;
-  grid-row-gap: 4rem;
+  grid-row-gap: 3rem;
+
+  @media (max-width: 900px) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (max-width: 500px) {
+    grid-template-columns: 1fr;
+  }
 }
 </style>
