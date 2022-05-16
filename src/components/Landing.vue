@@ -78,6 +78,7 @@ section {
   max-width: 2000px;
   display: flex;
   align-items: center;
+  position: relative;
 
   .top-left-blob {
     position: absolute;

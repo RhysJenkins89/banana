@@ -27,13 +27,9 @@ export default {
 
 <style>
 html, body {
-  margin: 0 0;
+  margin: 0 auto;
   padding: 0 0;
   font-family: 'Poppins', sans-serif;
   max-width: 2000px;
-
-  @media (min-width: 2000px) {
-    margin: 0 auto;
-  }
 }
 </style>
