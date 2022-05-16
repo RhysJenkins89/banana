@@ -2,7 +2,7 @@
   <div class="card">
     <img :src="product.image">
     <h3>{{product.product_name}}</h3>
-    <p>{{product.price}}</p>
+    <p>£{{product.price}}</p>
   </div>
 </template>
 
@@ -14,21 +14,40 @@ export default {
 
 <style lang="scss" scoped>
 .card {
-  height: 25rem;
-  width: 20rem;
-  box-shadow: 0rem 0rem 1.5rem rgba(0, 0, 0, .5);
-  border-radius: 1.5rem;
+  height: 440px;
+  width: 369px;
+  box-shadow: 0rem 4px 20px rgba(0, 0, 0, .15);
+  border-radius: 30px;
 
   @media (max-width: 500px) {
-    width: 10rem;
+    width: 80vw;
+    height: 30rem;
+    margin: 0 0 0 2rem;
   }
 
   img {
-    height: 70%;
+    height: 314px;
     width: 100%;
     object-fit: cover;
     border-radius: 1.5rem;
-    box-shadow: 0rem 1rem 1.5rem -1rem rgba(0, 0, 0, .5);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, .25);
+  }
+
+  h3 {
+    text-transform: uppercase;
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 700; 
+    color: #212121;
+    margin: 1.25rem 0 .25rem 1.5rem;
+  }
+
+  p {
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 700; 
+    color: #747474;
+    margin: 0 0 0 1.5rem;
   }
 }
 </style>

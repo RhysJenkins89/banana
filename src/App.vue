@@ -1,9 +1,9 @@
 <template>
   <Nav />
   <Landing />
-  <!-- <IntroText />
+  <IntroText />
   <Products />
-  <Footer /> -->
+  <Footer />
 </template>
 
 <script>
@@ -30,5 +30,6 @@ html, body {
   margin: 0;
   padding: 0;
   font-family: 'Poppins', sans-serif;
+  max-width: 2000px;
 }
 </style>
