@@ -58,6 +58,11 @@ section {
 
     @media (max-width: 500px) {
       margin: 4rem 2rem;
+      margin-top: -5rem;
+    }
+
+    @media (max-width: 350px) {
+      margin-top: -10rem;
     }
 
     h2 {
@@ -92,6 +97,14 @@ section {
 
     @media (max-width: 1200px) {
       grid-row-start: 1;
+    }
+
+    @media (max-width: 600px) {
+      margin-top: -10rem;
+    }
+
+    @media (max-width: 350px) {
+      margin-top: -20rem;
     }
 
     .blob {

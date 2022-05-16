@@ -55,15 +55,38 @@ section {
   height: fit-content;
   width: 100%;
   max-width: 2000px;
+  margin-top: 6rem;
 
   .text-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     justify-items: center;
+    margin: 0 4rem 8rem 4rem;
+
+    @media (max-width: 1400px) {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @media (max-width: 725px) {
+      grid-template-columns: 1fr;
+    }
+
+    @media (max-width: 500px) {
+      margin: 0 4rem 8rem 2rem;
+    }
 
     div {
       grid-column-start: 1;
       width: 369px;
+
+      @media (max-width: 950px) {
+        width: 300px;
+      }
+
+      @media (max-width: 500px) {
+        width: 80vw;
+        margin: 0 0;
+      }
 
       p {
         font-weight: 600;
@@ -77,19 +100,23 @@ section {
 }
 
 .container {
-  margin: 0 auto;
+  margin: 0 4rem;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   justify-items: center;
   grid-row-gap: 4rem;
 
-  @media (max-width: 900px) {
+  @media (max-width: 1400px) {
     grid-template-columns: 1fr 1fr;
   }
 
-  @media (max-width: 500px) {
+  @media (max-width: 800px) {
+    margin: 0 2rem;
+  }
+
+  @media (max-width: 725px) {
     grid-template-columns: 1fr;
-    justify-items: flex-start;
+    justify-items: center;
   }
 }
 </style>

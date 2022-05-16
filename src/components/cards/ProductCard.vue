@@ -19,10 +19,16 @@ export default {
   box-shadow: 0rem 4px 20px rgba(0, 0, 0, .15);
   border-radius: 30px;
 
+  @media (max-width: 950px) {
+    width: 300px;
+    height: fit-content;
+    padding-bottom: 1rem;
+  }
+
   @media (max-width: 500px) {
     width: 80vw;
-    height: 30rem;
-    margin: 0 0 0 2rem;
+    height: fit-content;
+    margin: 0 0;
   }
 
   img {
@@ -40,6 +46,10 @@ export default {
     font-weight: 700; 
     color: #212121;
     margin: 1.25rem 0 .25rem 1.5rem;
+
+    @media (max-width: 950px) {
+      margin: 1.25rem 1.5rem .25rem 1.5rem;
+    }
   }
 
   p {
